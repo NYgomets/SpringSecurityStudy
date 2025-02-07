@@ -22,6 +22,11 @@ public class LoginController {
         return "login/login";
     }
 
+    @GetMapping("/api/login")
+    public String restLogin() {
+        return "rest/login";
+    }
+
     @GetMapping("/signup")
     public String signup() {
         return "login/signup";
